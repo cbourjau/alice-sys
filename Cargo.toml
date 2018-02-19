@@ -3,10 +3,18 @@ name = "alice-sys"
 version = "0.1.0"
 authors = ["cbourjau <christian.bourjau@cern.ch>"]
 build = "build.rs"
+maintenance = { status = "deprecated" }
+description = " Deprecated Rust bindings for ROOT used to analyze the public ALICE open-data "
+repository = "https://github.com/cbourjau/alice-sys"
+readme = "README.md"
+keywords = ["cern", "alice", "lhc", "physics", "data"]
+categories = ["science"]
+license = "MPL-2.0"
 
 [dependencies]
 libc = "*"
-alice-open-data = { path="../alice/alice-open-data" }
+alice-open-data = "0.1.0"
+
 [build-dependencies]
 gcc = "0.3"
 bindgen = "^0.29.0"
